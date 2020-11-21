@@ -93,8 +93,6 @@ public class Autorizacion extends AppCompatActivity implements View.OnClickListe
                 return map;
             }
         };
-
-        //tiempo de respuesta, establece politica de reintentos
         request.setRetryPolicy(new DefaultRetryPolicy(
                 10000,
                 DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
